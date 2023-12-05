@@ -1,0 +1,72 @@
+<!-- 
+Name: Angel Solares
+File: multiplicationTable2.html
+Date: 12/4/23
+GUI Assignment: Creates a multiplication table generator.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table Generator</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+<form id="multiplicationForm">
+    <header>Multiplication Table Generator</header>
+    
+    <label for="startMultiplier">Start Multiplier:</label>
+    <input type="number" id="startMultiplier" name="startMultiplier" required>
+    <div class="slider-container">
+        <div id="sliderMinCol"></div>
+    </div>
+    
+    <label for="endMultiplier">End Multiplier:</label>
+    <input type="number" id="endMultiplier" name="endMultiplier" required>
+    <div class="slider-container">
+        <div id="sliderMaxCol"></div>
+    </div>
+    
+    <label for="startMultiplicand">Start Multiplicand:</label>
+    <input type="number" id="startMultiplicand" name="startMultiplicand" required>
+    <div class="slider-container">
+        <div id="sliderMinRow"></div>
+    </div>
+    
+    <label for="endMultiplicand">End Multiplicand:</label>
+    <input type="number" id="endMultiplicand" name="endMultiplicand" required>
+    <div class="slider-container">
+        <div id="sliderMaxRow"></div>
+    </div>
+    
+    <button type="submit">Generate Table</button>
+</form>
+
+<div id="tabs">
+    <ul>
+        <li><a href="#parameters">Parameters</a></li>
+    </ul>
+    <div id="parameters">
+        <!-- Your form goes here -->
+    </div>
+</div>
+<div id="tableContainer" class="scrollable-table">
+    <table id="multiplicationTable">
+        <tbody id="tableBody"></tbody>
+    </table>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="tablescript2.js"></script>
+
+</body>
+</html>
